@@ -12,7 +12,7 @@ A biblioteca numpy é usada para fazer as curvas senoides de cada frequencia que
 
 ## Encoder
 
-![encoder1](img/encoder/encoder-1.png)
+![encoder1](imgs/encoder/encoder-1.png)
 
 Tom do 1 gerado. Senoide da frequência 697Hz somada com a senoide da 1209Hz
 
