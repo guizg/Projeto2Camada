@@ -5,10 +5,11 @@ import time
 import matplotlib
 matplotlib.use("TkAgg")
 from matplotlib import pyplot as plt
-import urllib.request
+import requests
 
 
-global fs,duration,x
+global fs,duration,x,hostip
+hostip = '192.168.0.103'
 fs = 44100
 duration = 1
 x = np.linspace(0, duration, fs * duration)
@@ -26,8 +27,8 @@ def createTonesArray():
 	return tons
 
 def playSound(freq):
-	f = urllib.request.urlopen('http://127.0.0.1:5000/listen')
-	if f.read() == 'OK':
+	res = requests.get('http://192.168.0.103:5000/listen')
+	if res.ok:
 		print('Decoder ouvindo, tocando')
 		plt.clf()
 		sd.play(freq,fs)
@@ -36,21 +37,22 @@ def playSound(freq):
 		plt.show()
 
 def humanMusic():
-    yh = np.sin(2*math.pi*x*512)
-    ym = np.sin(2*math.pi*x*576)
-    while True:
-        # reproduz o som
-        sd.play(yh, fs)
-        # aguarda fim da reprodução
-        sd.wait()
-        # reproduz o som
-        sd.play(ym, fs)
-        # aguarda fim da reprodução
-        sd.wait()
-        # reproduz o som
-        sd.play(yh, fs)
-        # aguarda fim da reprodução
-        sd.wait()
-        time.sleep(0.5)
+	x = np.linspace(0, 0.5, fs * 0.5)
+	yh = np.sin(2*math.pi*x*512)
+	ym = np.sin(2*math.pi*x*576)
+	while True:
+		# reproduz o som
+		sd.play(yh, fs)
+		# aguarda fim da reprodução
+		sd.wait()
+		# reproduz o som
+		sd.play(ym, fs)
+		# aguarda fim da reprodução
+		sd.wait()
+		# reproduz o som
+		sd.play(yh, fs)
+		# aguarda fim da reprodução
+		sd.wait()
+		time.sleep(0.5)
 
 

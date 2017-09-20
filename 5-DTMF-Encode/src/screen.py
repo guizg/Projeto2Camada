@@ -12,6 +12,7 @@ import encoder as encoder
 class Screen:    
     def __init__(self):
         self.root = Tk()
+        self.root.title = 'Human music generator (and DTMF)'
         self.fs = 44100
         self.buttons = [
             ['1','2','3','a'],
@@ -33,7 +34,13 @@ class Screen:
                 )
                 button.grid(row = r, column = c)
                 # freq = np.sin(2*math.pi*x*freqsUpper[2]) + np.sin(2*math.pi*x*freqsLower[2])
-
+        humanMusicButton = Button(
+            self.root,
+            relief = RAISED,
+            padx = 10,
+            text='HM',
+            command=encoder.humanMusic
+        ).grid(row=3)
 
                 
     def buttonClicked(self,buttonVal):
