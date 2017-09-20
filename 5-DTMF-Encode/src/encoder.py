@@ -2,11 +2,15 @@ import sounddevice as sd
 import numpy as np
 import math
 import time
-import matplotlib.pyplot as plt
+import matplotlib
+matplotlib.use("TkAgg")
+from matplotlib import pyplot as plt
+import urllib.request
+
 
 global fs,duration,x
 fs = 44100
-duration = 0.5
+duration = 1
 x = np.linspace(0, duration, fs * duration)
 
 def createTonesArray():
@@ -22,9 +26,14 @@ def createTonesArray():
 	return tons
 
 def playSound(freq):
-	sd.play(freq,fs)
-	plt.plot(x,freq)
-	sd.wait()
+	f = urllib.request.urlopen('http://127.0.0.1:5000/listen')
+	if f.read() == 'OK':
+		print('Decoder ouvindo, tocando')
+		plt.clf()
+		sd.play(freq,fs)
+		sd.wait()
+		plt.plot(x[:200],freq[:200])
+		plt.show()
 
 def humanMusic():
     yh = np.sin(2*math.pi*x*512)
