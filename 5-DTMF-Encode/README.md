@@ -76,11 +76,75 @@ Tom do D gerado. Senoide da frequência 941 Hz somada com a senoide da 1633 Hz
 
 ![decoder](imgs/decoder/decoder1.png)
 
+Tom do 1 recebido. Senoide da frequência 697 Hz somada com a senoide da 1209 Hz com ruídos
+
+![decoder](imgs/decoder/decoder2.png)
+
+Tom do 2 recebido. Senoide da frequência 697 Hz somada com a senoide da 1336 Hz com ruídos
+
+![decoder](imgs/decoder/decoder3.png)
+
+Tom do 3 recebido. Senoide da frequência 697 Hz somada com a senoide da 1477 Hz com ruídos
+
+![decoder](imgs/decoder/decoderA.png)
+
+Tom do A recebido. Senoide da frequência 697 Hz somada com a senoide da 1633 Hz com ruídos
+
+![decoder](imgs/decoder/decoder4.png)
+
+Tom do 4 recebido. Senoide da frequência 770 Hz somada com a senoide da 1209 Hz com ruídos
+
+![decoder](imgs/decoder/decoder5.png)
+
+Tom do 5 recebido. Senoide da frequência 770 Hz somada com a senoide da 1336 Hz com ruídos
+
+
+![decoder](imgs/decoder/decoder6.png)
+
+Tom do 6 recebido. Senoide da frequência 770 Hz somada com a senoide da 1477 Hz com ruídos
+
+
+![decoder](imgs/decoder/decoderB.png)
+
+Tom do B recebido. Senoide da frequência 770 Hz somada com a senoide da 1633 Hz com ruídos
+
+![decoder](imgs/decoder/decoder7.png)
+
+Tom do 7 recebido. Senoide da frequência 852 Hz somada com a senoide da 1209 Hz com ruídos
+
+![decoder](imgs/decoder/decoder8.png)
+
+Tom do 8 recebido. Senoide da frequência 852 Hz somada com a senoide da 1336 Hz com ruídos
+
+
+![decoder](imgs/decoder/decoder9.png)
+
+Tom do 9 recebido. Senoide da frequência 852 Hz somada com a senoide da 1477 Hz com ruídos
+
+
+![decoder](imgs/decoder/decoderC.png)
+
+Tom do C recebido. Senoide da frequência 852 Hz somada com a senoide da 1633 Hz com ruídos
+
+
+![decoder](imgs/decoder/decoder0.png)
+
+Tom do 0 recebido. Senoide da frequência 941 Hz somada com a senoide da 1336 Hz com ruídos
+
+
+![decoder](imgs/decoder/decoder#.png)
+
+Tom do # recebido. Senoide da frequência 941 Hz somada com a senoide da 1477 Hz com ruídos
+
+
+![decoder](imgs/decoder/decoderD.png)
+
+Tom do D recebido. Senoide da frequência 941 Hz somada com a senoide da 1633 Hz com ruídos
 
 
 ---
 title: Camada Física -  APS 5 - DTMF - Encoder e recepção
-author: Rafael Corsi - rafael.corsi@insper.edu.br
+author: Rafael Corsi - rafael.corsi@insper.edu.br 
 date: Setembro - 2017
 ---
 
