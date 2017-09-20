@@ -1,5 +1,29 @@
 ---
 title: Camada Física -  APS 5 - DTMF - Encoder e recepção
+authors: Frederico Curti e Guilherme Graicer
+date: Setembro - 2017
+---
+
+# Descrever a geração de tons
+
+A biblioteca numpy é usada para fazer as curvas senoides de cada frequencia que compoem o tom e então elas são somadas, formando a curva final. 
+
+# Gráficos de cada tom (com a descrição de suas frequências)
+
+## Encoder
+
+![encoder1](img/encoder/encoder-1.png)
+
+Tom do 1 gerado. Senoide da frequência 697Hz somada com a senoide da 1209Hz
+
+
+
+
+
+
+
+---
+title: Camada Física -  APS 5 - DTMF - Encoder e recepção
 author: Rafael Corsi - rafael.corsi@insper.edu.br
 date: Setembro - 2017
 ---
