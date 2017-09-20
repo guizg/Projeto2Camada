@@ -14,11 +14,67 @@ A biblioteca numpy é usada para fazer as curvas senoides de cada frequencia que
 
 ![encoder1](imgs/encoder/encoder-1.png)
 
-Tom do 1 gerado. Senoide da frequência 697Hz somada com a senoide da 1209Hz
+Tom do 1 gerado. Senoide da frequência 697 Hz somada com a senoide da 1209 Hz
 
+![encoder1](imgs/encoder/encoder-2.png)
 
+Tom do 2 gerado. Senoide da frequência 697 Hz somada com a senoide da 1336 Hz
 
+![encoder1](imgs/encoder/encoder-3.png)
 
+Tom do 3 gerado. Senoide da frequência 697 Hz somada com a senoide da 1477 Hz
+
+![encoder1](imgs/encoder/encoder-a.png)
+
+Tom do A gerado. Senoide da frequência 697 Hz somada com a senoide da 1633 Hz
+
+![encoder1](imgs/encoder/encoder-4.png)
+
+Tom do 4 gerado. Senoide da frequência 770 Hz somada com a senoide da 1209 Hz
+
+![encoder1](imgs/encoder/encoder-5.png)
+
+Tom do 5 gerado. Senoide da frequência 770 Hz somada com a senoide da 1336 Hz
+
+![encoder1](imgs/encoder/encoder-6.png)
+
+Tom do 6 gerado. Senoide da frequência 770 Hz somada com a senoide da 1477 Hz
+
+![encoder1](imgs/encoder/encoder-b.png)
+
+Tom do B gerado. Senoide da frequência 770 Hz somada com a senoide da 1633 Hz
+
+![encoder1](imgs/encoder/encoder-7.png)
+
+Tom do 7 gerado. Senoide da frequência 852 Hz somada com a senoide da 1209 Hz
+
+![encoder1](imgs/encoder/encoder-8.png)
+
+Tom do 8 gerado. Senoide da frequência 852 Hz somada com a senoide da 1336 Hz
+
+![encoder1](imgs/encoder/encoder-9.png)
+
+Tom do 9 gerado. Senoide da frequência 852 Hz somada com a senoide da 1477 Hz
+
+![encoder1](imgs/encoder/encoder-c.png)
+
+Tom do C gerado. Senoide da frequência 852 Hz somada com a senoide da 1633 Hz
+
+![encoder1](imgs/encoder/encoder-0.png)
+
+Tom do 0 gerado. Senoide da frequência 941 Hz somada com a senoide da 1336 Hz
+
+![encoder1](imgs/encoder/encoder-#.png)
+
+Tom do # gerado. Senoide da frequência 941 Hz somada com a senoide da 1477 Hz
+
+![encoder1](imgs/encoder/encoder-d.png)
+
+Tom do D gerado. Senoide da frequência 941 Hz somada com a senoide da 1633 Hz
+
+## Decoder
+
+![decoder](imgs/decoder/decoder1.png)
 
 
 
