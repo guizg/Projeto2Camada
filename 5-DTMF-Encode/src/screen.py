@@ -40,7 +40,7 @@ class Screen:
             padx = 10,
             text='HM',
             command=encoder.humanMusic
-        ).grid(row=3)
+        ).grid(row=4)
 
                 
     def buttonClicked(self,buttonVal):
