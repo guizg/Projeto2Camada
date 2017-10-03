@@ -17,7 +17,7 @@ x = np.linspace(0, duration, fs * duration)
 def createTonesArray():
 	freqsUpper = [1209, 1336, 1477, 1633]
 	freqsLower = [697, 770, 852, 941]
-	
+
 	tons = []
 	for i in range(4):
 		line = []
