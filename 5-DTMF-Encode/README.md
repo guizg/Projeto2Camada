@@ -141,6 +141,94 @@ Tom do # recebido. Senoide da frequência 941 Hz somada com a senoide da 1477 Hz
 
 Tom do D recebido. Senoide da frequência 941 Hz somada com a senoide da 1633 Hz com ruídos
 
+---
+# Entrega APS 6 - Decodificação
+
+- ## Fourier do sinal *transmitido* / Fourier do sinal *recuperado*
+### Tom 1
+![decoder](imgs/encoder2/encoder1.png)
+![decoder](imgs/decoder2/1.png)
+### Tom 2
+![decoder](imgs/encoder2/encoder2.png)
+![decoder](imgs/decoder2/2.png)
+### Tom 3
+![decoder](imgs/encoder2/encoder3.png)
+![decoder](imgs/decoder2/3.png)
+### Tom A
+![decoder](imgs/encoder2/encoderA.png)
+![decoder](imgs/decoder2/A.png)
+### Tom 4
+![decoder](imgs/encoder2/encoder4.png)
+![decoder](imgs/decoder2/4.png)
+### Tom 5
+![decoder](imgs/encoder2/encoder5.png)
+![decoder](imgs/decoder2/5.png)
+### Tom 6
+![decoder](imgs/encoder2/encoder6.png)
+![decoder](imgs/decoder2/6.png)
+### Tom B
+![decoder](imgs/encoder2/encoderb.png)
+![decoder](imgs/decoder2/b.png)
+### Tom 7
+![decoder](imgs/encoder2/encoder7.png)
+![decoder](imgs/decoder2/7.png)
+### Tom 8
+![decoder](imgs/encoder2/encoder8.png)
+![decoder](imgs/decoder2/8.png)
+### Tom 9
+![decoder](imgs/encoder2/encoder9.png)
+![decoder](imgs/decoder2/9.png)
+### Tom C
+![decoder](imgs/encoder2/encoderc.png)
+![decoder](imgs/decoder2/c.png)
+### Tom *
+![decoder](imgs/encoder2/encoderEstrelinha.png)
+![decoder](imgs/decoder2/*.png)
+### Tom 0
+![decoder](imgs/encoder2/encoder0.png)
+![decoder](imgs/decoder2/0.png)
+### Tom \#
+![decoder](imgs/encoder2/encoderhashtag.png)
+![decoder](imgs/decoder2/hashtag.png)
+### Tom D
+![decoder](imgs/encoder2/encoderD.png)
+![decoder](imgs/decoder2/D.png)
+
+## Frequências recebidas e a enviadas de cada tom (divergências)
+Ao tocar o tom 1, reconhecemos as frequencias
+> 692 Hz <br>
+> 1204.5 Hz <br>
+> 1245.5 Hz
+
+~ +- 8.7Hz erro
+
+Ao tocar o tom 2, reconhecemos as frequencias
+> 691.0 Hz <br>
+> 701.8 Hz <br>
+> 716.75 Hz <br>
+> 1308.5 Hz <br>
+> 1334.6 Hz <br>
+> 1348.0 Hz <br>
+
++- 0.3Hz erro
+
+Ao tocar o tom 3, reconhecemos as frequencias
+> 652.0 Hz <br>
+> 692.5 Hz <br>
+> 700.0 Hz <br>
+> 1460.0 Hz <br>
+> 1499.6 Hz <br>
+
++- 8.4Hz erro
+
+- <b> Com isso, concluímos que existiu aproximadamente um erro de ±6Hz na captação
+do sinal, sendo que isso é influenciado pelo threshold definido, que varia para cada microfone.
+No exemplo, o threshold foi de > 30db</b>
+
+
+## Tempos utilizados (geração e recepção dos sinais)
+    Nos nossos testes, usamos amostras de 1 segundo, pois se mostrou suficiente para a demonstração
+    e identificação dos tons, que foi o mesmo da geração
 
 ---
 title: Camada Física -  APS 5 - DTMF - Encoder e recepção
@@ -158,7 +246,6 @@ Favor preencher o form com informações das novas duplas :
 
 **Um novo repositório deve ser criado !!!**
  - https://goo.gl/forms/hE9Aow318dYQtO5u1
-
 
 # APS 5 : DTMF - Encoder e recepção.
 
