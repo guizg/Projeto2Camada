@@ -71,6 +71,24 @@ class Transmissor:
         samples_m1 = len(self.m1)
         samples_m2 = len(self.m2)
 
+        # Plota os samples no tempo
+        mx1 = np.linspace(0, len(self.m1)/self.fs, len(self.m1))
+        mx2 = np.linspace(0, len(self.m2)/self.fs, len(self.m2))
+        fig, (ax1,ax2) = plt.subplots(1,2,figsize=(15,5))
+        ax1.plot(mx1,self.m1)
+        ax2.plot(mx2,self.m2)
+        plt.show()
+
+        # Obtem o fourrier dos samples 
+        f1x,f1y = self.getFFT(self.m1)
+        f2x,f2y= self.getFFT(self.m2)
+
+        # Plota o fourrier das samples 
+        fig, (ax1,ax2) = plt.subplots(1,2,figsize=(15,5))
+        ax1.plot(f1x,f1y)
+        ax2.plot(f2x,f2y)
+        plt.show()
+
         # Filtra os samples - Passa baixa
         m1_filtered = self.LPF(self.m1,self.cutoff,self.fs)
         m2_filtered = self.LPF(self.m2,self.cutoff,self.fs)
@@ -78,6 +96,12 @@ class Transmissor:
         # Obtem o fourrier dos samples filtrados
         x1,y1 = self.getFFT(m1_filtered)
         x2,y2 = self.getFFT(m2_filtered)
+
+        # Plota o fourrier das samples filtrados
+        fig, (ax1,ax2) = plt.subplots(1,2,figsize=(15,5))
+        ax1.plot(x1,y1)
+        ax2.plot(x2,y2)
+        plt.show()
 
         # Cria as portadoras
         c1x,c1y = self.createCarrier(7000,self.m1)
@@ -90,6 +114,7 @@ class Transmissor:
         # Reproduz um sample filtrado
         self.play(m1_filtered)
 
+        
         # Plota o fourrier das portadoras
         fig, (ax1,ax2) = plt.subplots(1,2,figsize=(15,5))
         ax1.plot(fc1x,fc1y)
