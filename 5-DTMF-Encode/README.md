@@ -23,7 +23,7 @@ Utilizamos 7000 e 14000 Hz, pois o nosso sinal original foi filtrado para ocupar
 
 ## Mensagens, no tempo
 
-![bleh](sinal.png)
+![bleh](msgRecebidas.png)
 
 ## Fourier das mensagens
 
