@@ -55,11 +55,19 @@ Utilizamos 7000 e 14000 Hz, pois o nosso sinal original foi filtrado para ocupar
 
 ![fRecebido](fRecebido.png)
 
+## Mensagens recuperadas, no tempo antes do filtro
+
+![msgRecebidasSemFiltro](msgRecebidasSemFiltro.png)
+
+## Fourier das mensagens recuperadas, antes do filtro
+
+![fRecebidaSemFiltro](fRecebidaSemFiltro.png)
+
 ## Mensagens recuperadas, no tempo
 
 ![msgRecebidas](msgRecebidas.png)
 
-## Fourier das mensagens recuperadas
+## Fourier das mensagens recuperadas 
 
 ![fRecebida](fRecebida.png)
 
