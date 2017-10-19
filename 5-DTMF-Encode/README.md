@@ -47,9 +47,17 @@ Utilizamos 7000 e 14000 Hz, pois o nosso sinal original foi filtrado para ocupar
 
 # Recepção
 
+## Sinal recebido, no tempo
+
+![sinalRecebido](sinalRecebido.png)
+
 ## Mensagens recuperadas, no tempo
 
+![msgRecebidas](msgRecebidas.png)
+
 ## Fourier das mensagens recuperadas
+
+![fRecebida](fRecebida.png)
 
 # Áudio transmitido vs recebido
 
