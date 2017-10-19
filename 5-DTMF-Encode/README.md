@@ -61,7 +61,7 @@ Utilizamos 7000 e 14000 Hz, pois o nosso sinal original foi filtrado para ocupar
 
 # Áudio transmitido vs recebido
 
-
+Muito pouco ruído, o áudio recebido ficou bem parecido com o transmitido.
 
 ---
 # Descrever a geração de tons
