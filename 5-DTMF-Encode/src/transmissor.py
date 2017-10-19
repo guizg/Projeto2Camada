@@ -48,6 +48,7 @@ class Transmissor:
         return (x,y)
 
     def play(self,sample):
+        """ Reproduz um sinal ou sample e aguarda o fim da reprodução """
         sd.play(sample,self.fs)
         sd.wait()
 

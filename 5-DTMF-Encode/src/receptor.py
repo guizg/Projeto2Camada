@@ -6,6 +6,7 @@ import soundfile as sf
 import sounddevice as sd
 from scipy import signal as sg
 from scipy.fftpack import fft, ifft
+
 import matplotlib
 matplotlib.use("TkAgg")
 matplotlib.rcParams['agg.path.chunksize'] = 1000
@@ -20,6 +21,7 @@ class Receptor:
         self.recordingDuration = 10 # segundos
     
     def record(self):
+        """Grava audio por tempo determinado no construtor e retorna o sinal """
         audio = sd.rec(int(self.recordingDuration * self.fs),self.fs,channels=1)
         sd.wait()
         y = audio[:,0]
@@ -36,16 +38,18 @@ class Receptor:
         c1x,c1y = self.transmissor.createCarrier(7000,audio)
         c2x,c2y = self.transmissor.createCarrier(14000,audio)
 
-        # Multiplica o audio gravado pelos carriers para demodular e exibe o fourrier
+        # Multiplica o audio gravado pelos carriers para demodular,exibe o fourrier
         dam1 = audio * c1y
         dam2 = audio * c2y
         fdam1x,fdam1y = self.transmissor.getFFT(dam1)
         fdam2x,fdam2y = self.transmissor.getFFT(dam2)
-        
         fig, (ax1,ax2) = plt.subplots(1,2,figsize=(15,5))
         ax1.plot(fdam1x,fdam1y)
         ax2.plot(fdam2x,fdam2y)
         plt.show()
 
+        # Faz um filtro passa baixa e reproduz os sons recuperados
+        self.transmissor.play(self.transmissor.LPF(dam1,3000,self.fs))
+        self.transmissor.play(self.transmissor.LPF(dam2,3000,self.fs))
 
 Receptor().main()
