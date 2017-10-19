@@ -47,13 +47,33 @@ Utilizamos 7000 e 14000 Hz, pois o nosso sinal original foi filtrado para ocupar
 
 # Recepção
 
+## Sinal recebido, no tempo
+
+![sinalRecebido](sinalRecebido.png)
+
+## Fourier do sinal recebido
+
+![fRecebido](fRecebido.png)
+
+## Mensagens recuperadas, no tempo antes do filtro
+
+![msgRecebidasSemFiltro](msgRecebidasSemFiltro.png)
+
+## Fourier das mensagens recuperadas, antes do filtro
+
+![fRecebidaSemFiltro](fRecebidaSemFiltro.png)
+
 ## Mensagens recuperadas, no tempo
 
-## Fourier das mensagens recuperadas
+![msgRecebidas](msgRecebidas.png)
+
+## Fourier das mensagens recuperadas 
+
+![fRecebida](fRecebida.png)
 
 # Áudio transmitido vs recebido
 
-
+Muito pouco ruído, o áudio recebido ficou bem parecido com o transmitido.
 
 ---
 # Descrever a geração de tons
