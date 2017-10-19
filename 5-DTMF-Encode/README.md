@@ -11,6 +11,10 @@ date: Setembro - 2017
 Antes de modular, o sinal foi filtrado por um Passa-Baixa com cut-off de 3000 Hz (frequencia maxima da voz humana)
 Para modular os sinais bastou multiplicá-loa por portadoras.
 
+## Demodulação
+
+Para demodular, bastou multiplicar o sinal recebido pela portadora original e aplicar novamente o filtro Passa-Baixa com o mesmo cut-off.
+
 # Descrever as frequências das portadoras utilizadas e as bandas ocupadas
 
 Utilizamos 7000 e 14000 Hz, pois o nosso sinal original foi filtrado para ocupar até 3000Hz e quando modulado a banda dobra (ocupando 6000Hz, com o centro na frequencia escolhida para a portadora). Portanto, um vai ocupar de 4000 a 10000 Hz e o outro de 11000 a 17000 Hz.
