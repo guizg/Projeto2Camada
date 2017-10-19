@@ -4,6 +4,54 @@ authors: Frederico Curti e Guilherme Graicer
 date: Setembro - 2017
 ---
 
+# Descrever a modulação/ demodulação
+
+## Modulação
+
+Antes de modular, o sinal foi filtrado por um Passa-Baixa com cut-off de 3000 Hz (frequencia maxima da voz humana)
+Para modular os sinais bastou multiplicá-loa por portadoras.
+
+# Descrever as frequências das portadoras utilizadas e as bandas ocupadas
+
+Utilizamos 7000 e 14000 Hz, pois o nosso sinal original foi filtrado para ocupar até 3000Hz e quando modulado a banda dobra (ocupando 6000Hz, com o centro na frequencia escolhida para a portadora). Portanto, um vai ocupar de 4000 a 10000 Hz e o outro de 11000 a 17000 Hz.
+
+# Transmissão
+
+## Mensagens, no tempo
+
+![bleh](sinal.png)
+
+## Fourier das mensagens
+
+![bleh](fSinal.png)
+
+## Fourier das mensagens filtradas
+
+![bleh](fFiltrados.png)
+
+## Fourier das portadoras
+
+![bleh](fPortadoras.png)
+
+## Fourier dos sinais modulados
+
+![bleh](fModulados.png)
+
+## Fourier da soma deles
+
+![bleh](fSomado.png)
+
+# Recepção
+
+## Mensagens recuperadas, no tempo
+
+## Fourier das mensagens recuperadas
+
+# Áudio transmitido vs recebido
+
+
+
+---
 # Descrever a geração de tons
 
 A biblioteca numpy é usada para fazer as curvas senoides de cada frequencia que compoem o tom e então elas são somadas, formando a curva final. 
